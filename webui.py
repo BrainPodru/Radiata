@@ -46,7 +46,7 @@ def webui():
     app, local_url, share_url = app.launch(
         server_name=config.get("host"),
         server_port=config.get("port"),
-        share=config.get("share"),
+        share=True,
         prevent_thread_lock=True,
     )
     post_load()
